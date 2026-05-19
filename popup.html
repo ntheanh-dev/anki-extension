@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 260px;
+        padding: 12px;
+        font-family: Arial;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+
+      select {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 8px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 6px;
+      }
+
+      #status {
+        margin-top: 10px;
+        font-size: 12px;
+        color: green;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h3>Anki Settings</h3>
+
+    <div>Deck</div>
+    <select id="deckSelect"></select>
+
+    <div>Note Type</div>
+    <select id="noteTypeSelect"></select>
+
+    <button id="saveBtn">Save</button>
+
+    <div id="status"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Anki AI Generator",
+  "version": "1.0",
+  "permissions": ["contextMenus", "storage"],
+  "host_permissions": [
+    "http://localhost:8765/*",
+    "https://luyenviet.theanhmgt1011.workers.dev/"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
